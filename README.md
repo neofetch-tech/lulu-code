@@ -255,50 +255,12 @@ Lulu/
 The original Python/pybind11/React app is kept in [`legacy/`](legacy) for
 reference; the shipping application is the native C++ tree above.
 
-## Roadmap
-
-- [x] Native Qt 6 shell with the dark monochrome theme
-- [x] llama.cpp inference, streaming and KV-cache reuse
-- [x] Model catalog, downloads, local GGUF import
-- [x] File, search, shell, git and test tools with approvals
-- [x] Project scanner and toolchain detection
-- [x] Windows and Linux builds
-- [ ] Diff view before writes
-- [ ] Multi-file patch application and undo
-- [ ] Conversation persistence and project sessions
-- [ ] LSP diagnostics fed back into the agent loop
-- [ ] Bundled GPU builds (CUDA / Vulkan) in releases
-
 ## Contributing
 
 Issues and pull requests are welcome. Keep changes focused, match the existing
 style, and run the test suite before opening a PR. For anything larger than a
 bug fix, open an issue first so the design can be discussed.
 
-## Acknowledgements
-
-Lulu Code stands on the shoulders of [llama.cpp](https://github.com/ggml-org/llama.cpp),
-[ggml](https://github.com/ggml-org/ggml), [Qt](https://www.qt.io/) and the model
-authors at Qwen, Meta, Zhipu AI and DeepSeek. GGUF model files are downloaded
-from the Hugging Face community; each model keeps its own license.
-
-### Project Logos
-
-![AI Model 1](resources/icons/ai-model-1.png width="64" alt="AI Model 1 placeholder")
-![AI Model 2](resources/icons/ai-model-2.png width="64" alt="AI Model 2 placeholder")
-![AI Model 3](resources/icons/ai-model-3.png width="64" alt="AI Model 3 placeholder")
-![AI Model 4](resources/icons/ai-model-4.png width="64" alt="AI Model 4 placeholder")
-![AI Model 5](resources/icons/ai-model-5.png width="64" alt="AI Model 5 placeholder")
-![AI Model 6](resources/icons/ai-model-6.png width="64" alt="AI Model 6 placeholder")
-![AI Model 7](resources/icons/ai-model-7.png width="64" alt="AI Model 7 placeholder")
-![AI Model 8](resources/icons/ai-model-8.png width="64" alt="AI Model 8 placeholder")
-
-### Developer Tools Logos
-
-![Playwright](resources/icons/playwright.png width="32" alt="Playwright logo")
-![pytest](resources/icons/pytest.png width="32" alt="pytest logo")
-![Selenium](resources/icons/selenium.png width="32" alt="Selenium logo")
-![Git](resources/icons/git.png width="32" alt="Git logo")
 
 ## License
 
