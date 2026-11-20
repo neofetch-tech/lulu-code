@@ -1,0 +1,39 @@
+# Lulu Code - Gitignore
+
+# Build artifacts
+build*/
+build-linux/
+build-windows/
+build-win/
+dist/
+node_modules/
+build/
+**/lulu_code
+**/lulu_code.exe
+
+# QtCreator / VSCode
+.idea/
+.vscode/
+
+# User data (models, logs, settings)
+# These are stored per-user via QSettings and AppPaths, not in repo
+~/.local/share/Lulu/Lulu Code/
+~/.config/lulu-code/
+
+# Log files
+*.log
+
+# CMake
+CMakeCache.txt
+cmake_install.cmake
+
+# VSCode
+*.code-workspace
+
+# IDE
+*.swp
+*.swo
+
+# Binary / compiled
+*.o
+*.so

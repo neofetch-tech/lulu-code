@@ -1,0 +1,54 @@
+# .clang-format for Lulu Code
+Language: Cpp
+BasedOnStyle: llvm
+ColumnLimit: 120
+UseTab: ForIndentation
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 4
+TabularAlignment: left
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveInits: false
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackArguments: true
+BreakBeforeBinaryOperators: true
+BreakBeforeTernaryOperators: true
+C++17: true
+DeriveLineEnding: native
+DisableFormat: false
+FixIt: true
+ForEachMacros: for range
+NamespaceIndentation: none
+PackConstructorInitializers: Never
+PointerIndent: 2
+RefQualifier: &
+SortUsingDeclarations: true
+SplitFunctionDeclarationInColumn: 0
+Standard: Cpp17
+PackExhaustiveSmartSwitch: false
+PointerAlignment: middle
+SpaceAfterCStyleCast: true
+SpaceBeforeCStyleCast: true
+SpaceInEmptyParentheses: false
+ExperimentalAutoDocumentationComment: false
+PackInitializers: Assign
+
+# Qt-specific
+QtVersion: 6
+IncludeBlocks: \
+  "
+  <src/**/*.h>
+  "
+# Keep Q_OBJECT etc. in place
+
+# Pointer alignment
+PenaltyExcessCharacter: 10
+PenaltyCapitalizedLetter: 50
+PenaltyIdentifier: 15
+PenaltyLongLine: 10
+PenaltyReturnTypeOnItsOwnLine: 60
+
+# Comment formatting
+MaxCommentLineLength: 120
+FillColumn: 120

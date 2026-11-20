@@ -1,0 +1,50 @@
+cmake_presets.json for Lulu Code
+
+{
+  "version": 3,
+
+  "configurePresets": {
+    "cacheVariables": {
+      "CMAKE_BUILD_TYPE": "Release",
+      "CMAKE_POSITION_INDEPENDENT_CODE": "ON",
+
+      # --- llama.cpp ---
+      # Build with llama.cpp backend (ON = default). OFF for UI-only rapid iteration.
+      "LULU_WITH_LLAMA": "ON",
+      # Automatically fetch llama.cpp from GitHub when no local source is configured.
+      "LULU_FETCH_LLAMA": "ON",
+      # Tag/branch to fetch when using FetchContent.
+      "LULU_LLAMA_TAG": "b10333",
+      # Use a local llama.cpp checkout instead of fetching. Set to absolute path.
+      "LULU_LLAMA_SOURCE_DIR": "",
+
+      # --- Build options ---
+      # Build unit tests (Qt Test).
+      "LULU_BUILD_TESTS": "OFF",
+      # C++ standard. Set to 23 for full C++23 features.
+      "CMAKE_CXX_STANDARD": "23",
+      "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+      "CMAKE_CXX_EXTENSIONS": "OFF"
+    },
+    "name": "default",
+    "hidden": false
+  },
+
+  "buildPresets": [
+    {
+      "name": "default",
+      "configurePreset": "default",
+      "target": "lulu_code",
+      "jobs": "(nproc)"
+    }
+  ],
+
+  "testPresets": [
+    {
+      "name": "default",
+      "configurePreset": "default",
+      "target": "lulu_code",
+      "ctest": "true"
+    }
+  ]
+}
